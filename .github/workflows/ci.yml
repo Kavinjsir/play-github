@@ -1,6 +1,14 @@
 name: Check PR
 
-on: [pull_request]
+on:
+  push:
+    branches:
+      - main
+      - 'releases/**'
+  pull_request:
+    # Sequence of patterns matched against refs/heads
+    branches:
+      - main
 
 jobs:
   run-ci:
