@@ -35,6 +35,12 @@ export default function Home() {
               Homework 2
             </NextLink>
           </div>
+
+          <div className={styles.card}>
+            <NextLink href="/op1" passHref scroll={false}>
+              Optional 1
+            </NextLink>
+          </div>
         </div>
       </main>
 

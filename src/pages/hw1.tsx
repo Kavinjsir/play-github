@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Image from 'next/image';
 import styles from '@/styles/Home.module.css';
 import { useState } from 'react';
 
@@ -11,9 +12,10 @@ const HW1 = () => {
   };
 
   const onClickButton = (
-    _e: React.MouseEvent<HTMLButtonElement, MouseEvent>,
+    e: React.MouseEvent<HTMLButtonElement, MouseEvent>,
   ) => {
     alert(`Why click me!!!`);
+    e.preventDefault();
   };
 
   return (
@@ -35,7 +37,7 @@ const HW1 = () => {
         <article>This is an article.</article>
         <header>This is a header.</header>
         <aside>This is an aside.</aside>
-        <img
+        <Image
           alt="bulogo"
           src="https://www.bu.edu/brand/files/2019/06/master_logo.gif"
         />
